@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{21E7EF30-DD40-4DCA-A06E-32B17117E75D}</ProjectGuid>
+    <RootNamespace>SimpleCornerDetection</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\vc11\aruco\utils;..\vc11\aruco\src;..\include;..\..\..\cinder_master\include;..\..\..\cinder_master\boost;..\blocks\OpenCV\include;..\blocks\OpenCV\include\opencv2;..\..\..\cinder_master\blocks\OSC\src;..\..\..\cinder_master\blocks\QuickTime\include\msw;..\..\..\cinder_master\blocks\QuickTime\include</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;NOMINMAX;_WIN32_WINNT=0x0502;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>"..\..\..\cinder_master\include";..\include</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>cinder_d.lib;%(AdditionalDependencies);..\blocks\OpenCV\lib\vc11\opencv_calib3d243d.lib;..\blocks\OpenCV\lib\vc11\opencv_contrib243d.lib;..\blocks\OpenCV\lib\vc11\opencv_core243d.lib;..\blocks\OpenCV\lib\vc11\opencv_features2d243d.lib;..\blocks\OpenCV\lib\vc11\opencv_flann243d.lib;..\blocks\OpenCV\lib\vc11\opencv_gpu243d.lib;..\blocks\OpenCV\lib\vc11\opencv_imgproc243d.lib;..\blocks\OpenCV\lib\vc11\opencv_legacy243d.lib;..\blocks\OpenCV\lib\vc11\opencv_ml243d.lib;..\blocks\OpenCV\lib\vc11\opencv_nonfree243d.lib;..\blocks\OpenCV\lib\vc11\opencv_objdetect243d.lib;..\blocks\OpenCV\lib\vc11\opencv_photo243d.lib;..\blocks\OpenCV\lib\vc11\opencv_stitching243d.lib;..\blocks\OpenCV\lib\vc11\opencv_ts243d.lib;..\blocks\OpenCV\lib\vc11\opencv_video243d.lib;..\blocks\OpenCV\lib\vc11\opencv_videostab243d.lib;..\..\..\cinder_master\blocks\QuickTime\lib\msw\CVClient.lib;..\..\..\cinder_master\blocks\QuickTime\lib\msw\QTMLClient.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>"..\..\..\cinder_master\lib";"..\..\..\cinder_master\lib\msw"</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+      <IgnoreSpecificDefaultLibraries>LIBCMT;LIBCPMT</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\vc11\aruco\utils;..\vc11\aruco\src;..\include;..\..\..\cinder_master\include;..\..\..\cinder_master\boost;..\blocks\OpenCV\include;..\blocks\OpenCV\include\opencv2;..\..\..\cinder_master\blocks\OSC\src;..\..\..\cinder_master\blocks\QuickTime\include\msw;..\..\..\cinder_master\blocks\QuickTime\include</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;NOMINMAX;_WIN32_WINNT=0x0502;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>"..\..\..\cinder_master\include";..\include</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>cinder.lib;%(AdditionalDependencies);..\blocks\OpenCV\lib\vc11\opencv_calib3d243.lib;..\blocks\OpenCV\lib\vc11\opencv_contrib243.lib;..\blocks\OpenCV\lib\vc11\opencv_core243.lib;..\blocks\OpenCV\lib\vc11\opencv_features2d243.lib;..\blocks\OpenCV\lib\vc11\opencv_flann243.lib;..\blocks\OpenCV\lib\vc11\opencv_gpu243.lib;..\blocks\OpenCV\lib\vc11\opencv_imgproc243.lib;..\blocks\OpenCV\lib\vc11\opencv_legacy243.lib;..\blocks\OpenCV\lib\vc11\opencv_ml243.lib;..\blocks\OpenCV\lib\vc11\opencv_nonfree243.lib;..\blocks\OpenCV\lib\vc11\opencv_objdetect243.lib;..\blocks\OpenCV\lib\vc11\opencv_photo243.lib;..\blocks\OpenCV\lib\vc11\opencv_stitching243.lib;..\blocks\OpenCV\lib\vc11\opencv_ts243.lib;..\blocks\OpenCV\lib\vc11\opencv_video243.lib;..\blocks\OpenCV\lib\vc11\opencv_videostab243.lib;..\..\..\cinder_master\blocks\QuickTime\lib\msw\CVClient.lib;..\..\..\cinder_master\blocks\QuickTime\lib\msw\QTMLClient.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>"..\..\..\cinder_master\lib";"..\..\..\cinder_master\lib\msw"</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <GenerateMapFile>true</GenerateMapFile>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding />
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Resources.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\Resources.h" />
+    <ClInclude Include="..\blocks\OpenCV\include\CinderOpenCV.h" />
+    <ClInclude Include="..\..\..\cinder_master\blocks\OSC\src\OscArg.h" />
+    <ClInclude Include="..\..\..\cinder_master\blocks\OSC\src\OscBundle.h" />
+    <ClInclude Include="..\..\..\cinder_master\blocks\OSC\src\OscListener.h" />
+    <ClInclude Include="..\..\..\cinder_master\blocks\OSC\src\OscMessage.h" />
+    <ClInclude Include="..\..\..\cinder_master\blocks\OSC\src\OscSender.h" />
+    <ClInclude Include="..\..\..\cinder_master\blocks\OSC\src\ip\IpEndpointName.h" />
+    <ClInclude Include="..\..\..\cinder_master\blocks\OSC\src\ip\NetworkingUtils.h" />
+    <ClInclude Include="..\..\..\cinder_master\blocks\OSC\src\ip\PacketListener.h" />
+    <ClInclude Include="..\..\..\cinder_master\blocks\OSC\src\ip\TimerListener.h" />
+    <ClInclude Include="..\..\..\cinder_master\blocks\OSC\src\ip\UdpSocket.h" />
+    <ClInclude Include="..\..\..\cinder_master\blocks\OSC\src\osc\MessageMappingOscPacketListener.h" />
+    <ClInclude Include="..\..\..\cinder_master\blocks\OSC\src\osc\OscException.h" />
+    <ClInclude Include="..\..\..\cinder_master\blocks\OSC\src\osc\OscHostEndianness.h" />
+    <ClInclude Include="..\..\..\cinder_master\blocks\OSC\src\osc\OscOutboundPacketStream.h" />
+    <ClInclude Include="..\..\..\cinder_master\blocks\OSC\src\osc\OscPacketListener.h" />
+    <ClInclude Include="..\..\..\cinder_master\blocks\OSC\src\osc\OscPrintReceivedElements.h" />
+    <ClInclude Include="..\..\..\cinder_master\blocks\OSC\src\osc\OscReceivedElements.h" />
+    <ClInclude Include="..\..\..\cinder_master\blocks\OSC\src\osc\OscTypes.h" />
+    <ClInclude Include="aruco\src\aruco.h" />
+    <ClInclude Include="aruco\src\arucofidmarkers.h" />
+    <ClInclude Include="aruco\src\board.h" />
+    <ClInclude Include="aruco\src\boarddetector.h" />
+    <ClInclude Include="aruco\src\cameraparameters.h" />
+    <ClInclude Include="aruco\src\cvdrawingutils.h" />
+    <ClInclude Include="aruco\src\exports.h" />
+    <ClInclude Include="aruco\src\marker.h" />
+    <ClInclude Include="aruco\src\markerdetector.h" />
+    <ClInclude Include="aruco\utils\common.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\SimpleCornerDetectionApp.cpp" />
+    <ClCompile Include="..\..\..\cinder_master\blocks\OSC\src\OscBundle.cpp" />
+    <ClCompile Include="..\..\..\cinder_master\blocks\OSC\src\OscListener.cpp" />
+    <ClCompile Include="..\..\..\cinder_master\blocks\OSC\src\OscMessage.cpp" />
+    <ClCompile Include="..\..\..\cinder_master\blocks\OSC\src\OscSender.cpp" />
+    <ClCompile Include="..\..\..\cinder_master\blocks\OSC\src\ip\IpEndpointName.cpp" />
+    <ClCompile Include="..\..\..\cinder_master\blocks\OSC\src\osc\OscOutboundPacketStream.cpp" />
+    <ClCompile Include="..\..\..\cinder_master\blocks\OSC\src\osc\OscPrintReceivedElements.cpp" />
+    <ClCompile Include="..\..\..\cinder_master\blocks\OSC\src\osc\OscReceivedElements.cpp" />
+    <ClCompile Include="..\..\..\cinder_master\blocks\OSC\src\osc\OscTypes.cpp" />
+    <ClCompile Include="..\..\..\cinder_master\blocks\OSC\src\ip\win32\NetworkingUtils.cpp" />
+    <ClCompile Include="..\..\..\cinder_master\blocks\OSC\src\ip\win32\UdpSocket.cpp" />
+    <ClCompile Include="aruco\src\arucofidmarkers.cpp" />
+    <ClCompile Include="aruco\src\board.cpp" />
+    <ClCompile Include="aruco\src\boarddetector.cpp" />
+    <ClCompile Include="aruco\src\cameraparameters.cpp" />
+    <ClCompile Include="aruco\src\cvdrawingutils.cpp" />
+    <ClCompile Include="aruco\src\marker.cpp" />
+    <ClCompile Include="aruco\src\markerdetector.cpp" />
+    <ClCompile Include="aruco\utils\aruco_board_pix2meters.cpp" />
+    <ClCompile Include="aruco\utils\aruco_create_board.cpp" />
+    <ClCompile Include="aruco\utils\aruco_create_marker.cpp" />
+    <ClCompile Include="aruco\utils\aruco_selectoptimalmarkers.cpp" />
+    <ClCompile Include="aruco\utils\aruco_simple.cpp" />
+    <ClCompile Include="aruco\utils\aruco_simple_board.cpp" />
+    <ClCompile Include="aruco\utils\aruco_test.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="aruco\src\CMakeLists.txt" />
+    <Text Include="aruco\utils\CMakeLists.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>
