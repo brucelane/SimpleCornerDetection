@@ -28,7 +28,6 @@ class SimpleCornerDetectionApp : public AppNative {
     aruco::CameraParameters mCamParam;
     aruco::MarkerDetector mMarkerDetector;
     std::vector<aruco::Marker> mMarkers;
-	//gl::Texture	mTexture;
 };
 void SimpleCornerDetectionApp::prepareSettings( cinder::app::AppBasic::Settings *settings ) {
     settings->setFrameRate( 60.0 );
@@ -36,18 +35,6 @@ void SimpleCornerDetectionApp::prepareSettings( cinder::app::AppBasic::Settings 
 }
 void SimpleCornerDetectionApp::setup()
 {
-	// The included image is copyright Trey Ratcliff
-	// http://www.flickr.com/photos/stuckincustoms/4045813826/
-	
-	/*ci::Surface8u surface( loadImage( loadAsset( "dfw.jpg" ) ) );
-	cv::Mat input( toOcv( surface ) );
-	cv::Mat output;*/
-
-//	cv::medianBlur( input, output, 11 );
-//	cv::Sobel( input, output, CV_8U, 0, 1 ); 
-//	cv::threshold( input, output, 128, 255, CV_8U );
-
-	//mTexture = gl::Texture( fromOcv( output ) );
 	// CAMERA
     try {
 		mCapture = Capture::create( 640, 480 );
@@ -68,8 +55,7 @@ void SimpleCornerDetectionApp::update(){
 }
 void SimpleCornerDetectionApp::draw()
 {
-	/*gl::clear();
-	gl::draw( mTexture );*/
+
 	// clear out the window with black
 	gl::clear( Color( 0, 0, 0 ) );
     gl::enableAlphaBlending();
