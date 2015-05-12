@@ -25,7 +25,7 @@ class SimpleCornerDetectionApp : public AppNative {
     Surface             	mSurf;
     CaptureRef              mCapture;
     
-    aruco::CameraParameters mCamParam;
+    //aruco::CameraParameters mCamParam;
     aruco::MarkerDetector mMarkerDetector;
     std::vector<aruco::Marker> mMarkers;
 };

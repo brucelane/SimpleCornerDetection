@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Blocks">
+      <UniqueIdentifier>{C8BCF3AE-AD9E-4CC4-B38E-F12745EDA4AB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Blocks\OpenCV">
+      <UniqueIdentifier>{911DA8E4-911A-4782-A15F-5B8BCBBED35C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Blocks\OpenCV\include">
+      <UniqueIdentifier>{5454F175-A876-49E0-82BA-FBA78E80279E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Blocks\aruco">
+      <UniqueIdentifier>{9d525129-2f31-4f73-9a47-e875921518eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Blocks\aruco\src">
+      <UniqueIdentifier>{31980758-93c2-438a-8b4c-4128f29d5058}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Blocks\aruco\utils">
+      <UniqueIdentifier>{7f2c78ec-3eb6-4640-9596-d7d80f836caa}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\SimpleCornerDetectionApp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClInclude Include="..\include\Resources.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClCompile Include="..\src\SimpleCornerDetectionApp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\..\blocks\Cinder-OpenCV\include\CinderOpenCV.h">
+      <Filter>Blocks\OpenCV\include</Filter>
+    </ClInclude>
+    <ClCompile Include="..\blocks\aruco-1.2.5\src\ar_omp.cpp">
+      <Filter>Blocks\aruco\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blocks\aruco-1.2.5\src\arucofidmarkers.cpp">
+      <Filter>Blocks\aruco\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blocks\aruco-1.2.5\src\board.cpp">
+      <Filter>Blocks\aruco\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blocks\aruco-1.2.5\src\boarddetector.cpp">
+      <Filter>Blocks\aruco\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blocks\aruco-1.2.5\src\cameraparameters.cpp">
+      <Filter>Blocks\aruco\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blocks\aruco-1.2.5\src\chromaticmask.cpp">
+      <Filter>Blocks\aruco\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blocks\aruco-1.2.5\src\cvdrawingutils.cpp">
+      <Filter>Blocks\aruco\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blocks\aruco-1.2.5\src\highlyreliablemarkers.cpp">
+      <Filter>Blocks\aruco\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blocks\aruco-1.2.5\src\marker.cpp">
+      <Filter>Blocks\aruco\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blocks\aruco-1.2.5\src\markerdetector.cpp">
+      <Filter>Blocks\aruco\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blocks\aruco-1.2.5\src\subpixelcorner.cpp">
+      <Filter>Blocks\aruco\src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\Resources.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blocks\aruco-1.2.5\src\ar_omp.h">
+      <Filter>Blocks\aruco\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blocks\aruco-1.2.5\src\aruco.h">
+      <Filter>Blocks\aruco\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blocks\aruco-1.2.5\src\arucofidmarkers.h">
+      <Filter>Blocks\aruco\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blocks\aruco-1.2.5\src\board.h">
+      <Filter>Blocks\aruco\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blocks\aruco-1.2.5\src\boarddetector.h">
+      <Filter>Blocks\aruco\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blocks\aruco-1.2.5\src\cameraparameters.h">
+      <Filter>Blocks\aruco\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blocks\aruco-1.2.5\src\chromaticmask.h">
+      <Filter>Blocks\aruco\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blocks\aruco-1.2.5\src\cvdrawingutils.h">
+      <Filter>Blocks\aruco\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blocks\aruco-1.2.5\src\exports.h">
+      <Filter>Blocks\aruco\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blocks\aruco-1.2.5\src\highlyreliablemarkers.h">
+      <Filter>Blocks\aruco\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blocks\aruco-1.2.5\src\marker.h">
+      <Filter>Blocks\aruco\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blocks\aruco-1.2.5\src\markerdetector.h">
+      <Filter>Blocks\aruco\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blocks\aruco-1.2.5\src\subpixelcorner.h">
+      <Filter>Blocks\aruco\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blocks\aruco-1.2.5\utils\common.h">
+      <Filter>Blocks\aruco\utils</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Resources.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\blocks\aruco-1.2.5\src\CMakeLists.txt">
+      <Filter>Blocks\aruco\src</Filter>
+    </Text>
+  </ItemGroup>
+</Project>
